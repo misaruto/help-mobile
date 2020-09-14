@@ -8,6 +8,6 @@ Projeto desenvolvido como protótipo para o Hackathon do realizado na Secomp do 
 
 - Github: [@misaruto](https://github.com/misaruto)
 
-👤 \*\*Julie Pereira
+👤 **Julie Pereira
 
 - Github: [@juliespereira](https://github.com/juliespereira)
