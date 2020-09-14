@@ -21,4 +21,5 @@ export let colors = {
   danger: "#f00",
   inputBorder: "#ededed",
   link: "#dededd",
+  tabBarFocusedIcons: "#000",
 };

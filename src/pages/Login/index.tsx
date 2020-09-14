@@ -29,8 +29,8 @@ const Login: React.FC = () => {
 
   const handleSubmit: SubmitHandler<FormData> = (data) => {
     console.log(formRef);
+    navigate("HomeTabs");
   };
-
   return (
     <Container style={styles.container}>
       <Header
@@ -52,7 +52,7 @@ Desenvolvido para ajudar e conectar com mentorias."
           name="Senha"
           placeholder="Senha"
         />
-        <Button label="Login" />
+        <Button label="Login" onPress={() => formRef.current?.submitForm()} />
         <Link onPress={handleNavigateToCadastro} label="Cadastre-se" />
       </Form>
     </Container>

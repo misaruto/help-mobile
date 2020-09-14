@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     color: colors.textBase,
     flex: 1,
     textAlign: "center",
-    fontSize: 22,
+    fontSize: 18,
     fontWeight: "500",
   },
 });

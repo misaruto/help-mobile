@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { Text, View } from "react-native";
 
 import { Form } from "@unform/mobile";
+
 import { SubmitHandler, FormHandles } from "@unform/core";
 
 import Input from "../../components/Input";
@@ -9,12 +10,14 @@ import Header from "../../components/Header";
 import styles from "./styles";
 import Button from "../../components/Button";
 import Container from "../../components/Container";
+import Choice from "../../components/Choice";
 
 interface FormData {
   nome: string;
+  userName: string;
   email: string;
+  tipo: string;
   senha: string;
-  senha2: string;
 }
 
 const Cadastro: React.FC = () => {
@@ -28,6 +31,7 @@ const Cadastro: React.FC = () => {
     <Container style={styles.container}>
       <Header title="Cadastro" backLink={true} />
       <Form style={styles.form} ref={formRef} onSubmit={handleSubmit}>
+        <Input style={styles.input} key="nome" name="nome" placeholder="Nome" />
         <Input
           style={styles.input}
           key="email"
@@ -36,9 +40,9 @@ const Cadastro: React.FC = () => {
         />
         <Input
           style={styles.input}
-          key="email"
-          name="email"
-          placeholder="Email"
+          key="userName"
+          name="userName"
+          placeholder="Nome de usuário"
         />
         <Input
           style={styles.input}
@@ -46,11 +50,13 @@ const Cadastro: React.FC = () => {
           name="senha"
           placeholder="senha"
         />
-        <Input
-          style={styles.input}
-          key="senha2"
-          name="senha2"
-          placeholder="senha2"
+        <Choice
+          name="tipo"
+          key="tipo"
+          options={[
+            { id: "professor", label: "Professor" },
+            { id: "alunos", label: "Aluno" },
+          ]}
         />
         <Button label="Enviar" />
       </Form>

@@ -22,12 +22,7 @@ const Input: React.FC<Props> = ({ name, label, ...rest }) => {
   return (
     <>
       {label && <Text style={styles.inputLabel}>{label}</Text>}
-      <TextInput
-        style={styles.input}
-        ref={inputRef}
-        defaultValue={defaultValue}
-        {...rest}
-      />
+      <TextInput ref={inputRef} defaultValue={defaultValue} {...rest} />
       {error && <Text style={styles.inputError}>{error}</Text>}
     </>
   );
