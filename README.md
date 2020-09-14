@@ -4,10 +4,10 @@ Projeto desenvolvido como protótipo para o Hackathon do realizado na Secomp do 
 
 ## ✍ Autor
 
-👤 **Misael Freitas (https://emcomp.com.br)**
+👤 **Misael Freitas **
 
 - Github: [@misaruto](https://github.com/misaruto)
 
-👤 **Julie Pereira
+👤 **Julie Pereira**
 
 - Github: [@juliespereira](https://github.com/juliespereira)
